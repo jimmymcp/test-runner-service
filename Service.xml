@@ -4,7 +4,7 @@
         <TenantWebService>
             <ObjectType>5</ObjectType>
             <ServiceName>TestRunner</ServiceName>
-            <ObjectID>50100</ObjectID>
+            <ObjectID>79150</ObjectID>
             <Published>true</Published>
         </TenantWebService>
     </TenantWebServiceCollection>

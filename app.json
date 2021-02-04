@@ -2,7 +2,7 @@
   "id": "500cf713-1bde-46a6-982d-d20f3297e66b",
   "name": "Test Runner Service",
   "publisher": "James Pearson",
-  "version": "1.0.0.0",
+  "version": "1.1.0.0",
   "brief": "Test Runner for use with AL Test Runner VS Code Extension",
   "description": "Test Runner for use with AL Test Runner VS Code Extension",
   "privacyStatement": "https://jpearson.blog",
@@ -22,6 +22,12 @@
       "publisher": "Microsoft",
       "name": "Base Application",
       "version": "16.0.0.0"
+    },
+    {
+      "appId": "23de40a6-dfe8-4f80-80db-d70f83ce8caf",
+      "publisher": "Microsoft",
+      "name": "Test Runner",
+      "version": "1.0.0.0"
     }
   ],
   "screenshots": [],

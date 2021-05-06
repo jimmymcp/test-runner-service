@@ -18,4 +18,15 @@ codeunit 79150 "Test Runner Service JP"
 
         exit(Result);
     end;
+
+    procedure GetTableIDFromName(TableName: Text): Integer
+    var
+        AllObj: Record AllObj;
+    begin
+        AllObj.SetRange("Object Type", AllObj."Object Type"::Table);
+        AllObj.SetFilter("Object Name", StrSubstNo('@%1', TableName));
+        AllObj.FindFirst();
+
+        exit(AllObj."Object ID");
+    end;
 }

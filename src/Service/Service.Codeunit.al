@@ -9,6 +9,15 @@ codeunit 79150 "Test Runner Service JP"
         TestRunner.Run();
     end;
 
+    procedure RunTestsFromFilter(CodeunitIdFilter: Text; TestName: Text)
+    var
+        TestRunner: Codeunit "Test Runner JP";
+    begin
+        TestRunner.SetCodeunitIDFilter(CodeunitIdFilter);
+        TestRunner.SetTestName(TestName);
+        TestRunner.Run();
+    end;
+
     procedure GetCodeCoverage() Result: Text;
     var
         CodeCoverage: Codeunit "Code Coverage JP";

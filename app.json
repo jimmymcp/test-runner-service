@@ -2,7 +2,7 @@
   "id": "500cf713-1bde-46a6-982d-d20f3297e66b",
   "name": "Test Runner Service",
   "publisher": "James Pearson",
-  "version": "1.2.0.0",
+  "version": "1.3.0.0",
   "brief": "Test Runner for use with AL Test Runner VS Code Extension",
   "description": "Test Runner for use with AL Test Runner VS Code Extension",
   "privacyStatement": "https://jpearson.blog",

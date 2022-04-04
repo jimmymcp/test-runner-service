@@ -1,5 +1,6 @@
 codeunit 79150 "Test Runner Service JP"
 {
+    [ServiceEnabled]
     procedure RunTest(CodeunitId: Integer; TestName: Text)
     var
         TestRunner: Codeunit "Test Runner JP";
@@ -9,6 +10,7 @@ codeunit 79150 "Test Runner Service JP"
         TestRunner.Run();
     end;
 
+    [ServiceEnabled]
     procedure RunTestsFromFilter(CodeunitIdFilter: Text; TestName: Text)
     var
         TestRunner: Codeunit "Test Runner JP";
@@ -18,6 +20,7 @@ codeunit 79150 "Test Runner Service JP"
         TestRunner.Run();
     end;
 
+    [ServiceEnabled]
     procedure GetCodeCoverage() Result: Text;
     var
         CodeCoverage: Codeunit "Code Coverage JP";
@@ -28,6 +31,7 @@ codeunit 79150 "Test Runner Service JP"
         exit(Result);
     end;
 
+    [ServiceEnabled]
     procedure GetTableIDFromName(TableName: Text): Integer
     var
         AllObj: Record AllObj;

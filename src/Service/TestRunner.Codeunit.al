@@ -35,7 +35,7 @@ codeunit 79151 "Test Runner JP"
         if FunctionName = '' then
             exit(true);
 
-        exit((FunctionName = TestName) or (TestName = ''));
+        exit(FunctionName in [TestName, '', 'OnRun']);
     end;
 
     trigger OnAfterTestRun(CodeunitId: Integer; CodeunitName: Text; FunctionName: Text; Permissions: TestPermissions; Success: Boolean)

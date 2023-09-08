@@ -12,6 +12,8 @@ pageextension 79150 "Command Line Runner JP" extends "Command Line Test Tool"
                 CodeCoverage.ClearCodeCoverage();
                 CodeCoverageMgt.Clear();
                 CodeCoverageMgt.Start(false);
+
+                StorePerformance.Start();
             end;
         }
     }
@@ -23,5 +25,9 @@ pageextension 79150 "Command Line Runner JP" extends "Command Line Test Tool"
     begin
         CodeCoverageMgt.Refresh();
         CodeCoverage.SaveCodeCoverage();
+        StorePerformance.Stop();
     end;
+
+    var
+        StorePerformance: Codeunit "Store Performance";
 }

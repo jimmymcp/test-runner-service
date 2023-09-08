@@ -9,6 +9,8 @@ xmlport 79150 "Export Code Coverage JP"
             tableelement("Code Coverage"; "Code Coverage")
             {
                 XmlName = 'CodeCoverage';
+                SourceTableView = sorting("Object Type", "Object ID", "Line No.");
+
                 fieldelement(ObjectType; "Code Coverage"."Object Type")
                 {
                 }

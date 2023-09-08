@@ -32,6 +32,14 @@ codeunit 79150 "Test Runner Service JP"
     end;
 
     [ServiceEnabled]
+    procedure GetPerformanceProfile(): Text
+    var
+        StorePerformance: Codeunit "Store Performance";
+    begin
+        exit(StorePerformance.GetData());
+    end;
+
+    [ServiceEnabled]
     procedure GetTableIDFromName(TableName: Text): Integer
     var
         AllObj: Record AllObj;
